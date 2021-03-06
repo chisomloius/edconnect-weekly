@@ -4,9 +4,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="css\bootstrap.min.css" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #0026ff;">
+        <nav class="navbar navbar-expand-lg navbar-blue bg-primary">
             <span class="navbar-brand mb-0 h1">Project Explorer</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,17 +29,31 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section>
-            <p>
-                <h1><strong>Login</strong></h1>
-            </p>
-                <form>
-                    <p><label>Email Address": </label><input type="email" name="email" /></p>
-                    <p><label>Password: </label><input type="password" name="password"/></p>
-                    <p><input type="submit" /></p>
-                </form>   
-        </section>
+        <div class="container d-flex justify-content-center">
+            <p><h1><strong>Login</strong></h1></p>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <form>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address: </label>
+                    <input type="email" name="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+        <footer class="container-fluid-text-right">
+            <p class="mt-5 mb-3 text-muted" style="text-align:right;">Project Explorer &copy; 2020 - <strong>Edconnect</strong></p>
+        </footer>
     </main>
+    
+
 </body>
 </html>
