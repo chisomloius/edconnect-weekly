@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>edit project</title>
+<title>Register</title>
+<link rel="stylesheet" href="css\bootstrap.min.css" />
 </head>
+
 <body>
     <header>
-        <h1><strong>Project Explorer</strong></h1>
-        <h2><strong>One Stop Database for Academic Projects</strong></h2>
-        <!--<link rel="stylesheet" href="styles.css">-->
+        <nav class="navbar navbar-expand-lg navbar-white bg-primary">
+            <span class="navbar-brand mb-0 h1">Project Explorer</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline order-2">
+                <input class="form-control ml-sm-2" type="search" placeholder="Search Projects" name="searchForm" id="searchForm" />
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="collapse navbar-collapse mb-0 justify-content-end order-12" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sign in<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="editproject.html">Edit Project</a>
-    </nav>
     <main>
-        <section>
+
+        <div class="container mt-4">
             <h3><strong>Project 1</strong></h3>
-            <ul>
-                <li>Created by : Jane Doe</li>
-                <li>Date Created : 12/08/2017</li>
-                <li>Last Updated :01/09/2018</li>
-            </ul>
-        </section>
-        <section>
-            <p>
-                <h2><strong>Edit Project</strong></h2>
-            </p>
-            <form name="editProject">
-            </form>
-            <form>
-                <label>Project Name: </label><br />
-            </form>
-            <form>
-                <input type="text" name="name" />
-            </form>
-            <form>
-                <label>Project Abstract: <br /></label>
-            </form>
-            <form>
-                <textarea type="text" name="abstract"></textarea>
-            </form>
-            <form>
-                <label>Authors: <br /></label>
-            </form>
-            <form>
-                <input type="text" name="authors" />
-            </form>
-            <form>
-                <label>Tag(s): <br /></label>
-            </form>
-            <form>
-                <input type="text" name="tags" />
-            </form>
-            <form>
-                <label>Upload File: <br /></label>
-            </form>
-            <form>
-                <input type="file" name="projectFile" /><br />
-            </form>
-            <form>
-                <input type="submit" />
-            </form>
-        </section>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Created by</p>
+                    <p>Jane Doe</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Date Created</p>
+                    <p>12/08/2017</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Last Updated</p>
+                    <p>01/09/2018</p>
+                </div>
+                <div class=" col-md-3">
+                    <button class="btn btn-primary" type="submit">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-center mx-2">
+            <div class="row">
+                <div class="col-6">
+                    <h2><strong>Edit Project</strong></h2>
+                    <form name="editProject">
+                        <div class="form-group">
+                            <label>Project Name </label>
+                            <input type="text" name="name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Project Abstract</label>
+                            <textarea type="text" name="abstract" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Authors </label>
+                            <input type="text" name="authors" class="form-control" />
+                        </div>
+                        <div>
+                            <label>Tag(s): <br /></label>
+                            <input type="text" name="tags" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h2><strong>Manage project Files</strong></h2>
+                    <div class="form-group">
+                        <label>Upload File: <br /></label>
+                        <input type="file" name="projectFile" class="form-control" /><br />
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project files</h5>
+                            <p class="card-text">
+                                No file uploaded yet
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+       
     </main>
+    <footer class="container-fluid-text-right">
+        <p class="mt-5 mb-3 mx-2 text-muted" style="text-align:right;">Project Explorer &copy; 2020 - <strong>Edconnect</strong></p>
+    </footer>
 </body>
 </html>

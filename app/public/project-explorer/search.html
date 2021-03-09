@@ -1,62 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>search</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css" />
 </head>
+
 <body>
     <header>
-        <h1><strong>Project Explorer</strong></h1>
-        <h2><strong>One Stop Database for Academic Projects</strong></h2>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="createproject.html">Submit</a>
-    </nav>
-    <main>
-        <section>
-            <p>
-                <h3><strong>Search Project By</strong></h3>
-            </p>
-            <form>
-                <p><input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags" /></p>
-                <p>
-                    <label >Search By: </label>
-                    <select name="searchType">
-                        <option value="Name">Name</option>
-                        <option value="Abstract">Abstract</option>
-                        <option value="Authors">Authors</option>
-                        <option value="Tags">Tags</option>
-                    </select>
-                </p>
-                <p><input type="submit" value="Search" /></p>
+        <nav class="navbar navbar-expand-lg navbar-white bg-primary">
+            <span class="navbar-brand mb-0 h1">Project Explorer</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline order-2">
+                <input class="form-control ml-sm-2" type="search" placeholder="Search Projects" name="searchForm" id="searchForm" />
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button type="submit">Submit</button>
             </form>
-        </section>
-        <section>
-            <h3>Search Result</h3>
-            <div>
-                <ul>
-                    <li>Name:Project 1</li>
-                    <li>
-                        Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        Eleifend quam adipiscing vitae proin sagittis nisl.<br />
-                        Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        Eleifend quam adipiscing vitae proin sagittis nisl.<br />
-                        Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Eleifend quam adipiscing vitae proin sagittis nisl.
+            <div class="collapse navbar-collapse mb-0 justify-content-end order-12" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sign in<span class="sr-only">(current)</span></a>
                     </li>
-                    <li>Program: Computer Technology</li>
-                    <li>Authors: John Doe, Jane Doe</li>
-                    <li>Tags: #Asphyxia, #GSW</li>
-                    <li>Year: 2018</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
                 </ul>
             </div>
-        </section>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container my-1">
+            <h3><strong>Project Gallery</strong></h3>
+        </div>
+        <div claas="container d-flex justify-content-center bg-light p3">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags" class="form-control-lg" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Search by </label>
+                            <select name="searchType" class="form-control">
+                                <option value="Name">Name</option>
+                                <option value="Abstract">Abstract</option>
+                                <option value="Authors">Authors</option>
+                                <option value="Tags">Tags</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="container my-1">
+            <h3>All Projects</h3>
+        </div>
+        <div class="row p-3 ml-5">
+            <div class="col-md-3 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Description:Lorem ipsum dolor sitn  amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                            Eleifend quam adipiscing vitae proin sagittis nisl.<br />
+                            Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                            Eleifend quam adipiscing vitae proin sagittis nisl.<br />
+                            Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="card-link">#html</a>
+                        <a href="#" class="card-link">#jss</a>
+                        <a href="#" class="card-link">#jaavascript</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                            Eleifend quam adipiscing vitae proin sagittis nisl.<br />
+                            Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                            Eleifend quam adipiscing vitae proin sagittis nisl.<br />
+                            Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="card-link">#html</a>
+                        <a href="#" class="card-link">#jss</a>
+                        <a href="#" class="card-link">#jaavascript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="container-fluid-text-right">
+        <p class="mt-5 mb-3 mr-2 text-muted" style="text-align:right;">Project Explorer &copy; 2020 - <strong>Edconnect</strong></p>
+    </footer>
+
 </body>
 </html>
