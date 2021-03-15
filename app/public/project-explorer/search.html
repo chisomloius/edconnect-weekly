@@ -41,14 +41,18 @@
         <div class="container bg-light p-3">
             <form name="searchType">
                 <div class="row">
-                    <div class="col-sm-12 col-md-5 offset-md-2">
+                    <div class="col-md-5 offset-md-1">
                         <div class="form-group">
                             <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags" class="form-control form-control-lg" />
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-2">
+                    <div class="col-md-2">
                         <div class="form-group">
-                            <label>Search by</label>
+                            <label class="form-label form-control form-control-lg">Search by</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
                             <select name="searchTerm" class="form-control form-control-lg">
                                 <option value="Name">Name</option>
                                 <option value="Abstract">Abstract</option>
@@ -57,7 +61,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-2">
+                    <div class="col-md-2">
                         <div class="form-group">
                             <button class="btn btn-lg btn-primary" type="submit">Submit</button>
                         </div>
