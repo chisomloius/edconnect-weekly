@@ -49,15 +49,23 @@
                     <p>01/09/2018</p>
                 </div>
                 <div class=" col-md-3">
-                    <button class="btn btn-primary" type="submit">View Project</button>
+                    <button href="editproject.html" class="btn btn-primary" type="submit">View Project</button>
                 </div>
             </div>
         </div>
 
-        <div class="container d-flex justify-content-center mx-2">
+        <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col">
                     <h2><strong>Edit Project</strong></h2>
+                </div>
+                <div class="col">
+                    <h2><strong>Manage project Files</strong></h2>
+                </div>
+            </div>
+            <hr />
+            <div class="form-row">
+                <div class="col">
                     <form name="editProject">
                         <div class="form-group">
                             <label>Project Name </label>
@@ -73,15 +81,15 @@
                         </div>
                         <div>
                             <label>Tag(s): <br /></label>
-                            <input type="text" name="tags" class="form-control" />
+                            <input type="text" name="tags" class="form-control mb-1" />
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-6">
-                    <h2><strong>Manage project Files</strong></h2>
+                <div class="col">
+                    
                     <div class="form-group">
                         <label>Upload File: <br /></label>
                         <input type="file" name="projectFile" class="form-control" /><br />
@@ -94,7 +102,7 @@
                             </p>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
        
