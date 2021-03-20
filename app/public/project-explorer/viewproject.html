@@ -29,36 +29,52 @@
         </nav>
     </header>
     <main>
+
         <div class="container mt-4">
-            <h3><strong>Project 1</strong></h3>
+            <h2><strong>Project 1</strong></h2>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <p>Created by</p>
-                    <p>Jane Doe</p>
+                <div class="col-3">
+                    <p>
+                        Created by<br />
+                        Jane Doe
+                    </p>
                 </div>
-                <div class="col-md-3">
-                    <p>Date Created</p>
-                    <p>12/08/2017</p>
+                <div class="col-3">
+                    <p>
+                        Date Created<br />
+                        12/08/2017
+                    </p>
                 </div>
-                <div class="col-md-3">
-                    <p>Last Updated</p>
-                    <p>01/09/2018</p>
+                <div class="col-3">
+                    <p>
+                        Last Updated<br />
+                        01/09/2018
+                    </p>
                 </div>
-                <div class=" col-md-3">
-                    <button class="btn btn-primary d-flex justify-content-end" type="submit">Edit Project</button>
+                <div class="col-3 text-right">
+                    <a href="editproject.html" class="btn btn-primary">Edit Project</a>
                 </div>
             </div>
         </div>
 
-        <div class="container d-flex justify-content-center mx-2">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col">
+                    <h4><strong>Project Abstract</strong></h4>
+                </div>
+                <div class="col">
+                    <h4><strong>Project Details</strong></h4>
+                </div>
+            </div>
+            <hr />
+
             <div class="row">
-                <div class="col-6">
+
+                <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Project Abstract</h5>
-                            <hr />
                             <p class="card-text">
                                 Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
@@ -70,41 +86,38 @@
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
-                    </div> 
-                    <form>
-                        <div class="form-group">
-                            <label>Comments</label>
-                            <textarea type="text" name="abstract" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Comments</label>
+                                <textarea type="text" name="abstract" class="form-control form-control-lg"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-6">
+
+                <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Project Details</h5>
-                            <hr />
-                            <form>
-                                <div class="form-group">
-                                    <label>Authors </label>
-                                    <input type="text" name="authors" class="form-control" />
-                                </div>
-                            </form>
+                            <h5 class="class-title">Author(s)</h5>
                             <p class="card-text">Ade Chris</p>
                             <a href="#" class="class-link">#web</a>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Project files</h5>
-                                <p class="card-text">
-                                    No file uploaded yet
-                                </p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="card mt-2">
+                         <div class="card-body">
+                            <h5 class="card-title">Project files</h5>
+                            <p class="card-text">
+                                No file uploaded yet
+                            </p>
+                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
